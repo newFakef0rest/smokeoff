@@ -1,0 +1,18 @@
+@mixin text ($fz, $fw, $c, $tt) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+    text-transform: $tt;
+}
+@mixin col ($col) {
+    flex: 0 1 ($col / 12) * 100%;
+    padding: 0 15px;
+}
+@mixin font ($font) {
+    font-family: $font;
+}
+@mixin background ($repeat, $size, $position) {
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+}
